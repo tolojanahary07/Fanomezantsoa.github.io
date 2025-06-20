@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mon Portfolio - Génie industriel</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- SweetAlert2 -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="nav-span">Mezana Tolotra</span>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+        
+    </header>
+
+    <section id="hero" class="fade-in">
+        <img src="../img/tolotra.img.jpg" alt="Photo de profil de FANOMEZANTSOA Tolojanahary" class="chap" />
+        <h2>Je suis FANOMEZANTSOA Tolojanahary, étudiant en informatique motivé
+            chez Passerelles Numériques et je souhaite devenir ingénieur en informatique industrielle.</h2>
+        <p class="texte-anime">Bienvenue sur mon portfolio personnel</p>
+    </section>
+
+    <section id="about" class="fade-in">
+        <h2>À propos de moi</h2>
+        <div class="about-content">
+            <img src="../img/devant.jpg" alt="Photo de profil de FANOMEZANTSOA Tolojanahary" class="chip" />
+            <div>
+                <p>Étudiant en informatique motivé, passionné par le génie industriel et les innovations numériques. Ce portfolio est mon projet personnel pour présenter mes compétences en gestion de projets et données, automatisation industrielle et assistance IT.</p>
+                <p>📄 Vous pouvez télécharger mon CV en scannant ce QR code :</p>
+                    <div class="image-container">
+                <img src="../img/PDF QR Code.png" alt="scan me" class="scale-up" style="max-width: 200px; margin-top: 10px;" />
+                    </div>
+
+            </div>
+        </div>
+    </section>
+
+    <button class="button" onclick="afficherAlerte()">Clique ici pour une surprise</button>
+
+    <section id="projects" class="fade-in">
+        <h2>Mes Projets</h2>
+        <div class="projects-grid">
+            <div class="project-item slide-in-left" data-aos="flip-right">
+                <h3><em>Projet 1 :</em> Mini jeu JavaScript</h3>
+                <p>Un jeu créatif sur le recyclage pour trier les déchets domestiques, développé en <strong>JavaScript</strong> en collaboration avec deux autres personnes.</p>
+                <a href="../index2/index2.html" target="_blank">Voir le projet</a>
+            </div>
+            <div class="project-item slide-in-right" data-aos="flip-left">
+                <h3><em>Projet 2 :</em> Affiche sur la pollution numérique</h3>
+                <p>Pour sensibiliser aux impacts de la pollution numérique et proposer des solutions. Réalisée sur <strong>Figma</strong>.</p>
+                <a href="../document/A0 Developpement durable STN vf.pdf" target="_blank">Voir le projet</a>
+            </div>
+            <div class="project-item slide-in-right">
+                <h3><em>Projet 3 :</em> Affiche publicitaire pour un burger</h3>
+                <p>Créée pour la promotion d'un fast-food.</p>
+                <a href="../index1/index1.html" target="_blank">Voir le projet</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="fade-in">
+        <h2>Mes Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-category slide-in-bottom">
+                <h3>Techniques</h3>
+                <ul>
+                    <li>HTML5, CSS3 (notions)</li>
+                    <li>Python (bases de données)</li>
+                    <li>MS Office</li>
+                    <li>Visual Studio Code, Figma</li>
+                </ul>
+            </div>
+            <div class="skill-category slide-in-bottom">
+                <h3>Industrielles</h3>
+                <ul>
+                    <li>Leadership, responsabilité</li>
+                    <li>Gestion de projets</li>
+                    <li>Automatisation industrielle</li>
+                </ul>
+            </div>
+            <div class="skill-category slide-in-bottom">
+                <h3>Humaines & Langues</h3>
+                <ul>
+                    <li>Français B1, Anglais B1, Malagasy </li>
+                    <li>Responsable, sociable, dynamique</li>
+                    <li>Créatif, motivé</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <h2>Contact</h2>
+        <p>Vous souhaitez me contacter pour une offre de stage ? Voici mes coordonnées :</p>
+        <div id="contact-icons">
+            <ul>
+                <li class="contact-item fade-in-up">
+                    <a href="mailto:tolojanahary.fanomezantsoa@student.passerellesnumeriques.org">
+                        <img src="../img/mail.jpg" class="img1" alt="Email" />
+                        tolojanahary.fanomezantsoa@student. <br> passerellesnumeriques.org
+                    </a>
+                </li>
+                <li class="contact-item fade-in-up">
+                    <a href="tel:+261332096295">
+                        <img src="../img/phone number.jpg" class="img2" alt="Téléphone" />
+                        033 20 962 95
+                    </a>
+                </li>
+                <li class="contact-item fade-in-up">
+                    <a href="https://www.linkedin.com/in/fanomezantsoa-tolojanahary" target="_blank">
+                        <img src="../img/LINKDIN.jpg" class="img3" alt="LinkedIn" />
+                        linkedin.com/in/fanomezantsoa-tolojanahary
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>N'hésitez pas à me contacter pour toute opportunité !</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FANOMEZANTSOA</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
