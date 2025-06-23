@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♻️ Jeu du Tri Sélectif</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 20px;
+        }
+        #game-container {
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        .bin {
+            display: inline-flex;
+            width: 100px;
+            height: 120px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .bin:hover {
+            transform: scale(1.05);
+        }
+        #recycling-bin { background-color: #4caf50; } /* Vert */
+        #compost-bin { background-color: #8d6e63; } /* Marron */
+        #trash-bin { background-color: #f44336; } /* Rouge */
+        #item-to-sort {
+            font-size: 3em;
+            margin: 30px;
+        }
+        #score {
+            font-size: 1.5em;
+            margin: 10px;
+        }
+        #lives {
+            font-size: 1.2em;
+            color: #d32f2f;
+        }
+        #timer {
+            font-size: 1.2em;
+            color: #1976d2;
+        }
+        #message {
+            font-weight: bold;
+            min-height: 30px;
+            margin: 10px;
+        }
+        .correct { color: #4caf50; }
+        .wrong { color: #f44336; }
+        #game-over, #win-screen {
+            display: none;
+            font-size: 2em;
+            margin: 20px;
+        }
+        #win-screen { color: #4caf50; }
+        #game-over { color: #f44336; }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>♻️ Jeu du Tri Sélectif</h1>
+    <p>Triez les déchets dans la bonne poubelle. <br> Objectif : <strong>15 points</strong> (erreurs = -1 point, 3 vies max).</p>
+    
+    <div id="score">Score: 0</div>
+    <div id="lives">Vies: ❤️❤️❤️</div>
+    <div id="timer">Temps restant: 60</div>
+    
+    <div id="item-to-sort">🍎</div>
+    <div id="message"></div>
+    
+    <div id="game-container">
+        <div class="bin" id="recycling-bin">🗑️ Recyclage</div>
+        <div class="bin" id="compost-bin">🍂 Compost</div>
+        <div class="bin" id="trash-bin">🗑️ Déchets</div>
+    </div>
+    
+    <div id="win-screen">Vous avez gagné ! 🎉</div>
+    <div id="game-over">Game Over !</div>
+    <button id="restart-btn">Rejouer</button>
+    
+    <script src="jeu.js"></script>
+</body>
+</html>
+
+
+<!-- à récopier dans un fichier.js -->
+ 
