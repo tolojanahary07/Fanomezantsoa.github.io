@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav aria-label="Navigation principale">
             <span class="nav-span">Mezana Tolotra</span>
             <ul>
                 <li><a href="#about">À propos</a></li>
@@ -22,9 +22,7 @@
                 <li><a href="#skills">Compétences</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-
         </nav>
-        
     </header>
 
     <section id="hero" class="fade-in">
@@ -41,10 +39,9 @@
             <div>
                 <p>Étudiant en informatique motivé, passionné par le génie industriel et les innovations numériques. Ce portfolio est mon projet personnel pour présenter mes compétences en gestion de projets et données, automatisation industrielle et assistance IT.</p>
                 <p>📄 Vous pouvez télécharger mon CV en scannant ce QR code :</p>
-                    <div class="image-container">
-                <img src="./img/PDF QR Code.png" alt="scan me" class="scale-up" style="max-width: 200px; margin-top: 10px;" />
-                    </div>
-
+                <div class="image-container">
+                    <img src="./img/PDF QR Code.png" alt="scan me" class="scale-up" style="max-width: 200px; margin-top: 10px;" />
+                </div>
             </div>
         </div>
     </section>
@@ -64,7 +61,7 @@
                 <p>Pour sensibiliser aux impacts de la pollution numérique et proposer des solutions. Réalisée sur <strong>Figma</strong>.</p>
                 <a href="./document/A0 Developpement durable STN vf.pdf" target="_blank">Voir le projet</a>
             </div>
-            <div class="project-item slide-in-right">
+            <div class="project-item slide-in-right" data-aos="flip-right">
                 <h3><em>Projet 3 :</em> Affiche publicitaire pour un burger</h3>
                 <p>Créée pour la promotion d'un fast-food.</p>
                 <a href="./index1/index1.html" target="_blank">Voir le projet</a>
@@ -109,18 +106,18 @@
         <div id="contact-icons">
             <ul>
                 <li class="contact-item fade-in-up">
-                    <a href="mailto:tolojanahary.fanomezantsoa@student.passerellesnumeriques.org" class="icon email" >
-                        <i class="fas fa-envelope"></i>
+                    <a href="mailto:tolojanahary.fanomezantsoa@student.passerellesnumeriques.org" class="icon email" aria-label="Envoyer un email" title="Envoyer un email">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li class="contact-item fade-in-up">
-                    <a href="tel:+261332096295" class="icon phone">
-                        <i class="fas fa-phone"></i>
+                    <a href="tel:+261332096295" class="icon phone" aria-label="Appeler ce numéro" title="Appeler ce numéro">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li class="contact-item fade-in-up">
-                    <a href="https://www.linkedin.com/in/fanomezantsoa-tolojanahary" class="icon linkedin" >
-                        <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/fanomezantsoa-tolojanahary" class="icon linkedin" aria-label="Voir mon profil LinkedIn" title="Voir mon profil LinkedIn">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
                     </a>
                 </li>
             </ul>
@@ -130,7 +127,7 @@
 
     <footer>
         <p>&copy; 2025 FANOMEZANTSOA</p>
-        <h1>En collaborations aveec :</h1>
+        <h1>En collaboration avec :</h1>
     </footer>
 
     <script src="script.js"></script>
