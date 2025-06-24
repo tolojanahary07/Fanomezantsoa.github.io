@@ -331,4 +331,15 @@ footer {
 
 /* ======= ANIMATIONS ======= */
 @keyframes typing {
-  from { width
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px) }
+  to { opacity: 1; transform: translateX(0) }
+}
