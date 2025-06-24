@@ -216,7 +216,7 @@ h2 {
   position: relative;
   overflow: hidden;
   padding: 4rem 1rem;
-  background: linear-gradient(270deg, #2563eb, #3b82f6, #2563eb);
+  background: linear-gradient(270deg, #ececec, #3b82f6, #2563eb);
   background-size: 600% 600%;
   animation: gradientAnimation 15s ease infinite;
   border-radius: 12px;
