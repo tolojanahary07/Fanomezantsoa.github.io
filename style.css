@@ -235,22 +235,47 @@ h2 {
   box-shadow: 0 8px 18px rgba(3, 24, 212, 0.2);
 }
 
-#contact-icons a {
+.contact-icons a {
+  margin: 0 10px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.contact-icons {
   display: flex;
-  flex-direction: column;
+  gap: 20px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
-  color: #111;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
-#contact-icons img {
-  width: 80px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
+/* Couleurs de fond par réseau */
+.linkedin {
+  background-color: #0077B5;
 }
 
-#contact-icons img:hover {
-  transform: scale(1.5);
+.email {
+  background-color: #D44638;
+}
+
+.phone {
+  background-color: #25D366;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  filter: brightness(90%);
 }
 
 #contact p {
