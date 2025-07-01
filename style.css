@@ -61,7 +61,6 @@ nav ul {
   animation: slideInLeft 1s ease-out forwards;
 }
 
-/* tu peux aussi ajouter un effet glow par exemple */
 .nav-span:hover {
   text-shadow: 0 0 10px #fff, 0 0 15px var(--accent);
 }
@@ -71,6 +70,7 @@ nav li a {
   border-radius: 8px;
   transition: background-color 0.3s ease;
 }
+
 nav li a:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -106,9 +106,10 @@ h2 {
   text-align: center;
   padding: 4rem 1rem;
 }
+
 .image-container {
   display: flex;
-  justify-content: flex-end; /* aligne l’image à droite */
+  justify-content: flex-end;
 }
 
 #hero h2 {
@@ -125,7 +126,7 @@ h2 {
   border-right: 3px solid rgb(170, 161, 161);
   width: fit-content;
   margin: 0 auto;
-  animation: typing 5s steps(40, end), blink 0.7s  infinite;
+  animation: typing 5s steps(40, end), blink 0.7s infinite;
 }
 
 /* ======= ABOUT ======= */
@@ -135,6 +136,7 @@ h2 {
   align-items: center;
   gap: 20px;
 }
+
 @media (min-width: 770px) {
   .about-content {
     flex-direction: row;
@@ -188,6 +190,7 @@ h2 {
   justify-content: center;
   gap: 20px;
 }
+
 .skill-category {
   flex: 1 1 280px;
   background: #dbeafe;
@@ -196,40 +199,35 @@ h2 {
   text-align: center;
   transition: transform 0.3s ease;
 }
+
 .skill-category:hover {
   transform: translateY(-5px);
 }
+
 .skill-category ul {
   list-style: none;
   padding: 0;
 }
+
 .skill-category li {
   margin: 8px 5px;
 }
+
 .skill-category li:hover {
   transform: scale(1.5);
   box-shadow: 0 6px 20px rgba(13, 119, 122, 0.6);
 }
 
-/* ======= CONTACT ======= */
+/* ======= CONTACT (NOUVEAU STYLE) ======= */
 #contact {
-  position: relative;
-  overflow: hidden;
-  padding: 4rem 1rem;
-  background: linear-gradient(270deg, #ececec, #e9eaeb, #eceef3);
-  background-size: auto;
-  animation: gradientAnimation 15s ease infinite;
-  border-radius: 12px;
+  max-width: 1200px;
   margin: 2rem auto;
-  max-width: 600px;
+  padding: 2rem;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
   text-align: center;
-  color: white;
-}
-
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50% }
-  50% { background-position: 100% 50% }
-  100% { background-position: 0% 50% }
+  color: var(--text);
 }
 
 #contact-icons ul {
@@ -239,55 +237,37 @@ h2 {
   gap: 30px;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 20px 0;
 }
 
-/* Supprimer les styles sur les li */
 #contact-icons li {
-  background: transparent !important;
-  padding: 0 !important;
-  max-width: none;
-  flex: none;
-  transition: none;
+  background: transparent;
 }
 
-/* Icônes seules, centrées, plus grandes et responsives */
 #contact-icons a {
   margin: 0 15px;
-  font-size: 40px;
+  font-size: 32px;
   color: var(--accent);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  transition: color 0.3s ease, transform 0.3s ease;
-  text-decoration: none;
+  background-color: #f0f4ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Couleurs des icônes par réseau */
-.linkedin {
-  color: #0077B5;
-}
-.email {
-  color: #D44638;
-}
-.phone {
-  color: #25D366;
-}
-
-/* Effet au survol */
 #contact-icons a:hover {
-  color: var(--accent-hover);
-  transform: scale(1.3);
+  transform: scale(1.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Focus accessible */
-#contact-icons a:focus {
-  outline: 2px dashed var(--accent);
-  outline-offset: 4px;
-}
+/* Spécifique à chaque icône */
+.linkedin { color: #0077B5; }
+.email    { color: #D44638; }
+.phone    { color: #25D366; }
 
 /* ======= FOOTER ======= */
 footer {
@@ -323,13 +303,14 @@ footer {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
+
 .chap:hover,
 .chip:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
 }
 
-/* ======= ANIMATIONS ======= */
+/* ======= ANIMATIONS TEXTE ======= */
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
@@ -342,4 +323,49 @@ footer {
 @keyframes slideInLeft {
   from { opacity: 0; transform: translateX(-20px) }
   to { opacity: 1; transform: translateX(0) }
+}
+
+/* ======= ANIMATIONS SECTIONS (AJOUTÉES) ======= */
+.fade-in,
+.slide-in-left,
+.slide-in-right,
+.slide-in-bottom,
+.scale-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.active,
+.slide-in-left.active,
+.slide-in-right.active,
+.slide-in-bottom.active,
+.scale-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-in-left {
+  transform: translateX(-30px);
+}
+.slide-in-right {
+  transform: translateX(30px);
+}
+.slide-in-left.active,
+.slide-in-right.active {
+  transform: translateX(0);
+}
+
+.slide-in-bottom {
+  transform: translateY(30px);
+}
+.slide-in-bottom.active {
+  transform: translateY(0);
+}
+
+.scale-up {
+  transform: scale(0.8);
+}
+.scale-up.active {
+  transform: scale(1);
 }
