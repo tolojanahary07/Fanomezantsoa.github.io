@@ -155,7 +155,7 @@ h2 {
 
 .project-item {
   flex: 1 1 300px;
-  background: #72b1b9;
+  background: #72b1b99d;
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -193,8 +193,8 @@ h2 {
 }
 
 .skill-category {
-  flex: 0 1 280px;
-  background: #dbeafe;
+  flex: 1 1 300px;
+  background: #72b1b99d;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
