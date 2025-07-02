@@ -160,7 +160,7 @@ h2 {
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.4s, box-shadow 0.4s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-item:hover {
@@ -189,10 +189,11 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  box-sizing: border-box;
 }
 
 .skill-category {
-  flex: 1 1 280px;
+  flex: 0 1 280px;
   background: #dbeafe;
   padding: 20px;
   border-radius: 10px;
@@ -201,8 +202,9 @@ h2 {
 }
 
 .skill-category:hover {
-  transform: translateY(4px);
+  box-shadow: 0 8px 20px rgba(111, 177, 189, 0.2);
 }
+
 
 .skill-category ul {
   list-style: none;
