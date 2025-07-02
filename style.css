@@ -201,7 +201,7 @@ h2 {
 }
 
 .skill-category:hover {
-  transform: translateY(-5px);
+  transform: translateY(4px);
 }
 
 .skill-category ul {
