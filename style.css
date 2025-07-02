@@ -215,12 +215,14 @@ h2 {
 
 .skill-category li {
   margin: 8px 5px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .skill-category li:hover {
-  transform: scale(1.5);
-  box-shadow: 0 6px 20px rgba(13, 119, 122, 0.6);
+  transform: scale(1.1); /* moins violent */
+  box-shadow: 0 4px 12px rgba(13, 119, 122, 0.3);
 }
+
 
 /* ======= CONTACT (NOUVEAU STYLE) ======= */
 #contact {
