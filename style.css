@@ -280,47 +280,37 @@ footer {
   background-color: #1e293b;
   color: white;
   padding: 20px;
-  text-align: center;
 }
 
-footer h1 {
-  font-size: 18px;
-  margin-top: 10px;
-  text-align: left;
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-#contact-icons ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0;
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-right {
+  flex: 1;
+  min-width: 200px;
   display: flex;
   justify-content: flex-end;
-  gap: 30px; /* espace entre les icônes */
 }
 
-.contact-item a {
-  color: white;
-  font-size: 24px; /* taille des icônes */
-  transition: transform 0.3s ease;
+footer p,
+footer h1 {
+  margin: 10px 0;
 }
 
-.contact-item a:hover {
-  color: #3b82f6;
-  transform: scale(1.2); /* effet zoom */
-}
-
-footer p {
-  font-size: 18px;
-  margin-top: 10px;
-  text-align: right;
-}
 #logos-associations {
   display: flex;
-  justify-content: left;   /* ou flex-end si tu veux à gauche */
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap; /* pour s'adapter sur mobile */
-  margin-top: 15px;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 .asso {
@@ -329,7 +319,7 @@ footer p {
 }
 
 .logo {
-  width: 100px;  /* tu peux ajuster selon ton design */
+  width: 100px;
   height: auto;
   margin-top: 5px;
   transition: transform 0.3s ease;
@@ -337,6 +327,25 @@ footer p {
 
 .logo:hover {
   transform: scale(1.1);
+}
+
+#contact-icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  gap: 20px;
+}
+
+.contact-item a {
+  color: white;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #3b82f6;
+  transform: scale(1.2);
 }
 
 
