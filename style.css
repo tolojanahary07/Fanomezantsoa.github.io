@@ -275,6 +275,61 @@ h2 {
 .email    { color: #D44638; }
 .phone    { color: #25D366; }
 
+/* ===== Présentation ===== */
+
+#presentation {
+  padding: 40px 20px;
+  background-color: #f8fafc;
+  text-align: center;
+}
+
+.presentation-texte {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #1e293b;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.presentation-texte em {
+  display: block; /* pour passer à la ligne */
+  font-style: italic;
+  color: #2563eb; /* bleu ou autre couleur */
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.texte-anime {
+  font-size: 1.2rem;
+  color: #334155;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  margin-top: 10px;
+}
+
+/* Animation d’apparition */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 600px) {
+  .presentation-texte {
+    font-size: 1.2rem;
+  }
+
+  .texte-anime {
+    font-size: 1rem;
+  }
+}
+
 /* ======= FOOTER ======= */
 footer {
   background-color: #1e293b;
