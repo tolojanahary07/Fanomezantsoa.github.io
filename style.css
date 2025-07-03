@@ -277,11 +277,68 @@ h2 {
 
 /* ======= FOOTER ======= */
 footer {
-  background: var(--primary);
+  background-color: #1e293b;
   color: white;
+  padding: 20px;
   text-align: center;
-  padding: 15px;
 }
+
+footer h1 {
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+#contact-icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px; /* espace entre les icônes */
+}
+
+.contact-item a {
+  color: white;
+  font-size: 24px; /* taille des icônes */
+  transition: transform 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #3b82f6;
+  transform: scale(1.2); /* effet zoom */
+}
+
+footer p {
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: right;
+}
+#logos-associations {
+  display: flex;
+  justify-content: left;   /* ou flex-end si tu veux à gauche */
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap; /* pour s'adapter sur mobile */
+  margin-top: 15px;
+}
+
+.asso {
+  text-align: center;
+  max-width: 150px;
+}
+
+.logo {
+  width: 100px;  /* tu peux ajuster selon ton design */
+  height: auto;
+  margin-top: 5px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
 
 /* ======= BOUTON ======= */
 .button {
