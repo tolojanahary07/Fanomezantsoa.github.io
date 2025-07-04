@@ -291,7 +291,7 @@ h2 {
   padding: 0 10px;
 }
 
-.presentation-texte em {
+.presentation-texte {
   display: block; /* pour passer à la ligne */
   font-style: italic;
   color: #2563eb; /* bleu ou autre couleur */
