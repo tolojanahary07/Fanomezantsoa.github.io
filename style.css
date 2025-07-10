@@ -330,13 +330,15 @@ h2 {
   }
 }
 
-/* ======= FOOTER ======= */
+/* ===== FOOTER GLOBAL ===== */
 footer {
-  background-color: #1e293b;
-  color: white;
-  padding: 20px;
+  background-color: #1e293b; /* Fond bleu foncé */
+  color: white;              /* Texte blanc */
+  padding: 30px 20px;
+  font-family: 'Arial', sans-serif;
 }
 
+/* ===== CONTENU DU FOOTER ===== */
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -344,11 +346,13 @@ footer {
   align-items: flex-start;
 }
 
+/* ===== PARTIE GAUCHE ===== */
 .footer-left {
   flex: 1;
   min-width: 250px;
 }
 
+/* ===== PARTIE DROITE ===== */
 .footer-right {
   flex: 1;
   min-width: 200px;
@@ -356,11 +360,13 @@ footer {
   justify-content: flex-end;
 }
 
+/* ===== TITRES ET PARAGRAPHES ===== */
 footer p,
 footer h1 {
   margin: 10px 0;
 }
 
+/* ===== LOGOS DES ASSOCIATIONS ===== */
 #logos-associations {
   display: flex;
   gap: 20px;
@@ -368,20 +374,49 @@ footer h1 {
   margin-top: 10px;
 }
 
+/* ===== BLOC INDIVIDUEL POUR CHAQUE LOGO ===== */
 .asso {
   text-align: center;
+  padding: 15px;
   max-width: 150px;
+  background-color: rgba(255, 255, 255, 0.05); /* Léger fond */
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
 
+.asso:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ===== STYLE DES LOGOS ===== */
 .logo {
   width: 100px;
   height: auto;
   margin-top: 5px;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .logo:hover {
   transform: scale(1.1);
+}
+
+/* ===== VERSION MOBILE ===== */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-right {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  #logos-associations {
+    justify-content: center;
+  }
 }
 
 #contact-icons ul {
