@@ -186,7 +186,7 @@ h2 {
 /* ======= COMPÉTENCES ======= */
 .skills-grid {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 20px;
   box-sizing: border-box;
