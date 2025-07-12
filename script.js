@@ -1,3 +1,5 @@
+// === script.js ===
+
 document.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll(
     "section, .scale-up, .slide-in-left, .slide-in-right, .slide-in-bottom, .fade-in"
@@ -7,17 +9,17 @@ document.addEventListener("DOMContentLoaded", () => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("active");
-        observer.unobserve(entry.target); // déclenche une seule fois
+        observer.unobserve(entry.target); // Ne déclenche qu'une seule fois
       }
     });
   }, {
-    threshold: 0.1
+    threshold: 0.1,
   });
 
   elements.forEach((el) => observer.observe(el));
 });
 
-// Alerte SweetAlert
+// Affiche une alerte avec SweetAlert2
 function afficherAlerte() {
   Swal.fire({
     title: '🎉 Bienvenue !',
@@ -36,7 +38,7 @@ function afficherAlerte() {
     hideClass: {
       popup: 'animate__animated animate__fadeOutUp'
     },
-    confirmButtonText: 'C\'est parti !',
+    confirmButtonText: "C'est parti !",
     confirmButtonColor: '#4a90e2',
     timer: 6000,
     timerProgressBar: true
