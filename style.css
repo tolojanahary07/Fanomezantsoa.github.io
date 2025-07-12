@@ -323,66 +323,70 @@ h2 {
 }
 
 /* ===== FOOTER GLOBAL ===== */
+/* ===== FOOTER ===== */
 footer {
-  background-color: #1e293b; /* Fond bleu foncé */
-  color: white;              /* Texte blanc */
+  background-color: #07aef0;
+  color: white;
   padding: 30px 20px;
   font-family: 'Arial', sans-serif;
 }
 
-/* ===== CONTENU DU FOOTER ===== */
+/* ===== CONTENU FLEXIBLE ===== */
 .footer-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* ===== PARTIE GAUCHE ===== */
 .footer-left {
-  flex: 1;
-  min-width: 250px;
+  flex: 1 1 300px;
 }
 
 /* ===== PARTIE DROITE ===== */
 .footer-right {
-  flex: 1;
-  min-width: 200px;
+  flex: 1 1 300px;
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
-/* ===== TITRES ET PARAGRAPHES ===== */
-footer p,
-footer h1 {
+/* ===== TEXTES ===== */
+footer h1, footer p {
   margin: 10px 0;
 }
 
 /* ===== LOGOS DES ASSOCIATIONS ===== */
 #logos-associations {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   flex-wrap: wrap;
-  margin-top: 10px;
+  margin-top: 15px;
+  justify-content: flex-end;
 }
 
-/* ===== BLOC INDIVIDUEL POUR CHAQUE LOGO ===== */
+/* ===== BLOC LOGO ===== */
 .asso {
   text-align: center;
-  padding: 15px;
-  max-width: 150px;
-  background-color: rgba(255, 255, 255, 0.05); /* Léger fond */
+  padding: 10px;
+  max-width: 120px;
+  background-color: rgba(255, 255, 255, 0.08);
   border-radius: 8px;
   transition: background-color 0.3s ease;
+  flex: 1 1 100px;
 }
 
 .asso:hover {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
-/* ===== STYLE DES LOGOS ===== */
+/* ===== IMAGE LOGO ===== */
 .logo {
-  width: 100px;
+  width: 80px;
   height: auto;
   margin-top: 5px;
   transition: transform 0.3s ease;
@@ -392,6 +396,24 @@ footer h1 {
 .logo:hover {
   transform: scale(1.1);
 }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-right {
+    justify-content: center;
+  }
+
+  #logos-associations {
+    justify-content: center;
+  }
+}
+
 
 /* ===== VERSION MOBILE ===== */
 @media (max-width: 600px) {
