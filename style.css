@@ -148,13 +148,14 @@ h2 {
 /* ======= PROJETS ======= */
 .projects-grid {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 20px;
-  justify-content: center;
+  justify-content: flex-start;
+  overflow-x: auto;
 }
 
 .project-item {
-  flex: 1 1 300px;
+  flex: 0 0 300px;
   background: #72b1b99d;
   padding: 20px;
   border-radius: 10px;
